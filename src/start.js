@@ -47,13 +47,14 @@ function initialize() {
     //parse the data into an object
     lso = JSON.parse(localStorage[x]);
     //if the object has a realm data it is a realm to tbe loaded
-    if(objExists(lso.realm)){
-      var options = lso.options;
-      options.seed = lso.seed;
-      options.mods = lso.mods;
+    if(x=="realms"){
+      for(var y in lso) {
+        var options = lso[y];
+        options.seed = [y];
 
-      var hid = CPX[lso.type](options);
-      hasdata = true;
+        var hid = CPX.hexPlane(options);
+        hasdata = true;
+      }
     }
     //othrwise if the object has a unit type it should be loaded
     if(x == "units"){
