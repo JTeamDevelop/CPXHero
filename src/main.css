@@ -1,0 +1,208 @@
+.content {
+  padding: 1em;
+  overflow-y: auto;
+}
+.inline {
+  display: inline;
+}
+.header {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.top{
+  position: absolute;
+  top:0;
+}
+.red:hover {
+  background: rgba(255,0,0,1);
+}
+.orange:hover {
+  background: rgba(255,165,0,0.5);
+}
+.yellow:hover {
+  background: rgba(255,255,0,0.5);
+}
+.green:hover {
+  background: rgba(0,128,0,1);
+}
+.blue:hover {
+  background: rgba(40, 136, 226,0.75);
+}
+.indigo:hover {
+  background:rgba(75,0,130,0.5);
+}
+.rotate30 {
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+  transform: rotate(30deg);
+}
+.noshadow {
+  -moz-box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+ box-shadow: none !important;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+/* ==========================================================================
+title
+========================================================================== */
+#title {
+  position: fixed;
+  background: white;
+  padding:0.5em;
+  border-radius: 5px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index:5;
+}
+#title .header {
+  margin: 0;
+}
+/* ==========================================================================
+Maps
+========================================================================== */
+#maps {
+  position:fixed;
+  top:15px;
+  bottom:20px;
+  left:1%;
+  right:1%;
+  overflow:auto;
+}
+#maps canvas {
+  display: block;
+  margin: auto;
+}
+/* ==========================================================================
+Menu
+========================================================================== */
+#footernav div {
+  height: 50px;
+}
+img.svgicon {
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.svgicon {
+  position: absolute;
+  display: block;
+  width: 25px;
+  top: 7.5px;
+  left: 7.5px;
+}
+/* ==========================================================================
+Hero editor window
+========================================================================== */
+.aspectContainer .selectaspect{
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.skillLevel{
+  width: 100%;
+}
+.selectskill{
+  vertical-align: middle;
+}
+.skillLevel .selectskill{
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.heroEditor h2{
+  margin: 0;
+  margin-top: 0.25em;
+}
+.heroEditor h3{
+  margin: 0;
+  margin-top: 0.25em;
+}
+
+/* ==========================================================================
+Notify window
+========================================================================== */
+#notify{
+  position: fixed;
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  background-color: #e8e8e8;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#notify.wide {
+  width: 800px;
+}
+#notify.slim {
+  width: 400px;
+}
+#notify.wide .content {
+  max-height: 400px;
+}
+#notify.slim .content {
+  max-height: 500px;
+}
+#notify .ui-header{
+  background: silver;
+  border: none;
+  border-bottom-style: groove;
+}
+#notify button:hover {
+  background: silver;
+}
+/* ==========================================================================
+Gear
+========================================================================== */
+.store, .recruit{
+  position:relative;
+  font-size: 90%;
+  width:100%;
+}
+.store input, .recruit input{
+  position: absolute;
+  right:0;
+  width:40px;
+}
+/* ==========================================================================
+   Buttons classes
+   ========================================================================== */
+#footernav .ui-btn-active{
+  background-image: none !important;
+  background: white !important;
+  border: none !important;
+}
+.btn-large.ui-btn:hover {
+  background: rgba(40, 136, 226,1) !important;
+}
+.btn-large.ui-btn{
+  width: 15px;
+  height: 20px;
+  border-radius: 50% !important;
+  margin-right: 3px;
+  z-index: 5;
+  background: white;
+}
+button.ui-btn.green:hover {
+  background: rgba(0,128,0,1);
+}
+button.ui-btn.red:hover {
+  background: rgba(255,0,0,1);
+}
+
+/* ==========================================================================
+   Overland/Site html classes
+   ========================================================================== */
+h3.site  {
+  margin: 0;
+  margin-bottom: 0.5em;
+}

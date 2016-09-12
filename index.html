@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title>HexPlane</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="src/lib/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" type="text/css" href="src/main.css">
+  <link rel="stylesheet" media="(max-width: 450px)" href="src/mobile.css" />
+  <script type="text/javascript" src="src/lib/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="src/lib/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+  <div data-role="page">
+    <div id="title"></div>
+    <a id="mainmenu" class="btn-large ui-nodisc-icon ui-alt-icon ui-icon-bars ui-btn ui-shadow ui-corner-all">
+      <img class="svgicon svg" src="media/menu-icon.svg"/>
+    </a>
+    <div id="left">
+      <div id="time" ></div>
+      <div id="units">
+        <div id="unitsCurrent"></div>
+        <div id="unitsAll"></div>
+      </div>
+      <div id="dInfo"></div>
+      <div id="heroOptions" class="buttons center"></div>
+      <div id="timeOptions" class="buttons center">
+      </div>
+    </div>
+    <div id="right">
+      <div id="activeRealms" class="active"></div>
+      <div id="activeHeroes" class="active">
+        <div class="content"></div>
+      </div>
+      <div id="hexStats"></div>
+      <div id="hexKey"></div>
+    </div>
+    <div id="maps" ></div>
+    <div id="overDisplay" >
+      <div id="logo"></div>
+    </div>
+    <div id="footer" style="overflow:hidden;">
+      <div id="footernav" data-role="navbar">
+        <div class="center">
+          <a id="zoomin" class="zoom btn-large ui-btn-inline ui-btn">
+            <img class="svgicon" src="media/plus-black.svg"/>
+          </a>
+          <a id="zoomout" class="zoom btn-large ui-btn-inline ui-btn">
+            <img class="svgicon" src="media/minus-black.svg"/>
+          </a>
+          <a id="enter" class="btn-large ui-btn-inline ui-btn">
+            <img class="svgicon svg" src="media/impact-point.svg"/>
+          </a>
+          <a id="exit" class="btn-large ui-btn-inline ui-btn">
+            <img class="svgicon svg" src="media/exit-door.svg"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="notify"></div>
+  <div id="confirm" data-role="popup" data-overlay-theme="a" data-theme="a" data-dismissible="false" >Test</div>
+  <div class="hidden">
+  </div>
+</body>
+
+  <script type="text/javascript" src="src/lib/nedb.min.js"></script>
+  <script type="text/javascript" src="src/lib/jquery.noty.packaged.min.js"></script>
+  <script type="text/javascript" src="src/lib/chance.min.js"></script>
+  <script type="text/javascript" src="src/lib/createjs-2015.11.26.min.js"></script>
+  <script type="text/javascript" src="src/hex.js"></script>
+  <script type="text/javascript" src="src/gear.js"></script>
+  <script type="text/javascript" src="src/encounters.js"></script>
+  <script type="text/javascript" src="src/trouble.js"></script>
+  <script type="text/javascript" src="src/explore.js"></script>
+  <script type="text/javascript" src="src/user.js"></script>
+  <script type="text/javascript" src="src/herobuilder.js"></script>
+  <script type="text/javascript" src="src/hexmap.js"></script>
+  <script type="text/javascript" src="src/hexplane.js"></script>
+  <script type="text/javascript" src="src/atlas.js"></script>
+  <script type="text/javascript" src="src/overland.js"></script>
+  <script type="text/javascript" src="src/fight.js"></script>
+  <script type="text/javascript" src="src/start.js"></script>
+
+</html>
